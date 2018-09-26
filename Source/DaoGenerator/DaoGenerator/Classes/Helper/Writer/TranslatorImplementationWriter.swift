@@ -36,7 +36,7 @@ class TranslatorImplementationWriter {
                 .addLine("//  \(projectName)")
                 .addLine("//")
                 .addLine("//  Created by Code Generator")
-                .addLine("//  Copyright (c) 2016 RedMadRobot LLC. All rights reserved.")
+                .addLine("//  Copyright (c) 2018 RedMadRobot LLC. All rights reserved.")
                 .addLine("//")
                 .addBlankLine()
 
