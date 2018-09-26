@@ -12,7 +12,8 @@ import Foundation
 extension Klass {
     
     var isModel: Bool {
-        return annotations.contains(Annotation(name: "model", value: nil))
+        let modelAnnotations = [Annotation(name: "model", value: nil), Annotation(name: "dao_model", value: nil)]
+        return annotations.contains(where: modelAnnotations.contains)
     }
     
 }

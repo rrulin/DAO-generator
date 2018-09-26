@@ -12,15 +12,7 @@ import Foundation
 extension Property {
 
     func realm() -> Bool {
-        var realm: Bool = false
-        
-        self.annotations.forEach { (a: Annotation) in
-            if a.name == "realm" {
-                realm = true
-            }
-        }
-        
-        return realm
+        return self.annotations.contains { $0.name == "realm" }
     }
     
 }
